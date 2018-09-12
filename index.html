@@ -16,50 +16,77 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-<div class="container">
-    <div class="header">
-        <div class="content">Happy Halloween!</div>
+
+    <div class="container">
+        <div class="header">
+            <div class="content">Happy Halloween!</div>
+        </div>
+
+        <form class="form-inline" id="topic-form">
+            <input class="form-control col-sm-4" id="topic-input" type="text" placeholder="Search" aria-label="Search" style="text-align:center;">
+            <button class="btn btn-outline-success col-sm-1" id="add-topic" type="submit">🎃</button>
+        </form>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="gifs">
+                    <div id="buttons-view"></div>
+                    <button class="btn btn-outline-success" data-gif="halloween ghost">Spooky!</button>
+                    <button class="btn btn-outline-success" data-gif="cat costume">Meeeeeow🐈</button>
+                    <button class="btn btn-outline-success" data-gif="pumpkin">pumpkin</button>
+                    <button class="btn btn-outline-success" data-gif="pumpkin pie">Yummmmmm!</button>
+                    <button class="btn btn-outline-success" data-gif="halloween spider">😱Them thangs with lots of legs!😱</button>
+                    <button class="btn btn-outline-success" data-gif="halloween bats">Nan Nan Nan</button>
+                    <button class="btn btn-outline-success" data-gif="chucky">Little 💩</button>
+                    <button class="btn btn-outline-success" data-gif="halloween skeleton">Scarweeee!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div id="gifs-appear-here"></div>
+        </div>
+
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+                🎃
+            </div>
+            <div class="snowflake">
+                🕸️
+            </div>
+            <div class="snowflake">
+                🎃
+            </div>
+            <div class="snowflake">
+                😈
+            </div>
+            <div class="snowflake">
+                💀
+            </div>
+            <div class="snowflake">
+                🕷️
+            </div>
+            <div class="snowflake">
+                🎃
+            </div>
+            <div class="snowflake">
+                👻
+            </div>
+            <div class="snowflake">
+                🎃
+            </div>
+            <div class="snowflake">
+                👻
+            </div>
+        </div>
     </div>
 
-    <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">
-            🎃
-            </div>
-            <div class="snowflake">
-            🕸️
-            </div>
-            <div class="snowflake">
-            🎃
-            </div>
-            <div class="snowflake">
-            😈
-            </div>
-            <div class="snowflake">
-            💀
-            </div>
-            <div class="snowflake">
-            🕷️
-            </div>
-            <div class="snowflake">
-            🎃
-            </div>
-            <div class="snowflake">
-            👻
-            </div>
-            <div class="snowflake">
-            🎃
-            </div>
-            <div class="snowflake">
-            👻
-            </div>
-          </div>
-</div>
-
-<script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html
