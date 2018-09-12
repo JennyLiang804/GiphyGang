@@ -49,5 +49,9 @@ body {
     background-size: 50%;
 }
 
-
+@media screen and (max-width:570px) {
+    #topic-form {
+        margin-left: 0%;
+    }
+}
       

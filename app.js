@@ -39,7 +39,6 @@ $.ajax({
 $(document).on( "click", ".gif", function () {
 
         var state = $(this).data("state");
-        console.log (state);
 
         if (state === "still") {
         $(this).attr('src', $(this).attr('data-animate'));
