@@ -1,5 +1,4 @@
 # GiphyGang
-# GifTastic
 
 ### Overview
 
