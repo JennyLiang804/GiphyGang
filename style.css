@@ -12,10 +12,6 @@ body {
     }
 }  */
 
-img {
-    width: 360px;
-    height: 260px;
-}
 .content {
     margin: 2%;
     text-align: center;
@@ -44,14 +40,21 @@ img {
       text-align: center;
   }
 
+
+
 #gifs-appear-here {
-    margin-left: 32%;
+    margin-left: 40%;
+}
+
+img {
+    width: 360px;
+    height: 260px;
 }
 
 .footer {
     position: relative;
-    margin-top: 20%;
-    margin-left: 35%;
+    margin-top: 10%;
+    margin-left: 42%;
 }
 
 @media screen and (max-width:570px) {
