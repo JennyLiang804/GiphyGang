@@ -7,7 +7,7 @@ function renderButtons() {
     for (var i = 0; i < results.length; i++) {
         var a = $("<button class='btn btn-outline-success'>");
         a.addClass("topic");
-        a.attr("data-gif", results[i]);
+        a.attr("data-gif");
         a.text(results[i]);
         $("#buttons-view").append(a);
 
