@@ -1,5 +1,5 @@
 var topic = $("#buttons-view").attr("src");
-var results = [""];
+var results = [];
 
 function renderButtons() {
     
@@ -7,8 +7,9 @@ function renderButtons() {
     for (var i = 0; i < results.length; i++) {
         var a = $("<button class='btn btn-outline-success'>");
         a.addClass("topic");
-        a.attr("data-gif");
+        a.attr("data-gif", results[i]);
         a.text(results[i]);
+        a.addClass("gif-button");
         $("#buttons-view").append(a);
 
         $("#topic-input").val('');
@@ -16,7 +17,7 @@ function renderButtons() {
 
     }
 }
-$(document.body).on("click", "#add-topic", function (event) {
+$(document).on("click", "#add-topic", function (event) {
 
     event.preventDefault();
     var topic = $("#topic-input").val().trim();
@@ -24,7 +25,7 @@ $(document.body).on("click", "#add-topic", function (event) {
     renderButtons();
 });
 
-$("button").on("click", function(){
+$(document).on("click", ".gif-button", function(){
 
     var topic = $(this).attr("data-gif");
 
@@ -37,7 +38,8 @@ $.ajax({
 
 .then(function(response){
     var results = response.data;
-   
+   $("#gifs-appear-here").empty();
+
     for (var i = 0; i < results.length; i++){
     
             var gifDiv = $("<div class='item'>");

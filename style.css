@@ -75,12 +75,28 @@ img {
     }
 }
 @media screen and (max-width:375px){
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
+    .content{
+        font-size: 65px;
+    }
     #gifs-appear-here {
         margin-left: -7%;
     }
-    img{
-        position: relative;
-
+    img {
+        width: 330px;
+    }
+    #topic-input {
+        width: 300px;
+    }
+    #add-topic {
+        width: 300px;
+    }
+    .footer {
+        margin-left: 0%;
+        width: 300px;
     }
 }
 
