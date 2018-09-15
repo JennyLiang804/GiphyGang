@@ -38,7 +38,7 @@ $.ajax({
 
 .then(function(response){
     var results = response.data;
-   $("#gifs-appear-here").empty();
+//    $("#gifs-appear-here").empty();
 
     for (var i = 0; i < results.length; i++){
     
